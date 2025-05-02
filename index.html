@@ -1,65 +1,181 @@
 <!doctype html>
 <html>
-    <head>
 
-    </head>
-    <body>
-        <h1>
-            Nancy Gonzalez
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <nav class="side-menu">
+    </nav>
+
+</head>
+
+<body class="body">
+    <nav class="top-menu">
+        <ul>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">How to Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <h1 class="underline">
+            Nancy Gonzalez Solano
         </h1>
-        <img src="me.jpg" atl="Nancy" style="width:250px;height:300px;">
-        <hr>
-        <p>
-            I am a Games, Interactive Media, and Mobile Technology (GIMM) student at Boise State University, currently completing my sophomore year and preparing to enter my junior year with an expected graduation of Fall 2027.
-            I am seeking a role where I can apply my skills in game design, development, teamwork, and creative problem-solving to achieve personal goals while contributing to a team's success.
-            I am eager for opportunities that allow me to be creative and work hands-on as much as possible.
-            Below, you’ll find examples of projects I have worked on and skills I have developed throughout my education.
-            Feel free to email me if you have any questions or would like to connect!
-        </p>
-        <hr>
-        <h2> Projects</h2>
-        <h4>Mobile Narrative Website | 2024</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Adipiscing elit quisque faucibus ex sapien vitae pellentesque. 
-            Vitae pellentesque sem placerat in id cursus mi. 
-            Cursus mi pretium tellus duis convallis tempus leo. 
-            Tempus leo eu aenean sed diam urna tempor. 
-            Urna tempor pulvinar vivamus fringilla lacus nec metus.
-        </p>
-        <h4>Interactive Comic: Quantum Mechanics | 2024</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Adipiscing elit quisque faucibus ex sapien vitae pellentesque. 
-            Vitae pellentesque sem placerat in id cursus mi. 
-            Cursus mi pretium tellus duis convallis tempus leo. 
-            Tempus leo eu aenean sed diam urna tempor. 
-            Urna tempor pulvinar vivamus fringilla lacus nec metus.
-        </p>
-        <h4>Samantha Project | 2024</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Adipiscing elit quisque faucibus ex sapien vitae pellentesque. 
-            Vitae pellentesque sem placerat in id cursus mi. 
-            Cursus mi pretium tellus duis convallis tempus leo. 
-            Tempus leo eu aenean sed diam urna tempor. 
-            Urna tempor pulvinar vivamus fringilla lacus nec metus.
-        </p>
-        <h4>2D Platformer Game - Duck Jump | 2023</h4>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit.
-            Adipiscing elit quisque faucibus ex sapien vitae pellentesque. 
-            Vitae pellentesque sem placerat in id cursus mi. 
-            Cursus mi pretium tellus duis convallis tempus leo. 
-            Tempus leo eu aenean sed diam urna tempor. 
-            Urna tempor pulvinar vivamus fringilla lacus nec metus.
-        </p>
-        <hr>
-        <a href="https://www.linkedin.com/in/nancygonzalezsolano/" target="_blank">LinkedIn</a>
-        <p>
-            Contact me at:
-            <a href="https://mail.google.com/mail/?view=cm&to=nancygonzalez@u.boisestate.edu" target="_blank">nancygonzalez@u.boisestate.edu</a>
+        <div class="profile-section" id="biography">
+            <img src="me.jpg" alt="Nancy" class="profile-image">
 
-        </p>
-    </body>
+            <div class="bio-text">
+                <h2 class="underline">Biography</h2>
+                <p class="profile-text">
+                    I am a Games, Interactive Media, and Mobile Technology (GIMM) student at Boise State University,
+                    currently completing my sophomore year and preparing to enter my junior year with an expected
+                    graduation
+                    of Fall 2027. I am seeking a role where I can apply my skills in game design, development, teamwork,
+                    and creative problem-solving to achieve personal goals while contributing to a team's success.
+                    I am eager for opportunities that allow me to be creative and work hands-on as much as possible.
+                    Below, you’ll find examples of projects I have worked on and skills I have developed throughout my
+                    education. Feel free to email me if you have any questions or would like to connect!
+                </p>
+            </div>
+        </div>
+        <hr class="thick-line">
+        <h2 id="projects" class="underline"> Projects</h2>
+
+
+        <div class="project">
+            <div class="project-text">
+                <p><strong>Mobile Narrative Website</strong> | 2024<br>
+                    Solo Project | HTML, CSS, JavaScript
+                </p>
+                <ul>
+                    <li>Designed and developed a personal narrative website exploring cartoons throughout different life
+                        stages.</li>
+                    <li>Implemented a dynamic data table with filtering functionality.</li>
+                    <li>Applied CSS for interactive visual elements and enhanced user engagement.</li>
+                </ul>
+            </div>
+            <div>
+                <video class="mn" controls>
+                    <source src="Mobilenarative.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </div>
+
+        <hr>
+        <div class="project">
+            <div class="project-text">
+                <p><strong>Interactive Comic: Macro Quantum Mechanics</strong> | 2024<br>
+                    Team of 5 | Unity, GitHub, Figma
+                </p>
+                <ul>
+                    <li>Created half of the visual comic panels from team sketches.</li>
+                    <li>Integrated all visual elements in Unity to create an interactive experience.</li>
+                    <li>Collaborated using GitHub and Figma for version control and workflow management.</li>
+                </ul>
+            </div>
+            <div class="project-side">
+                <iframe class="youtube" src="https://www.youtube.com/embed/bzd7eJ3krag?start=335"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <div class="project-text">
+                <p><strong>Samantha Project – Assistive Rover Design </strong> | 2024<br>
+                    Team of 5 | Accessibility Engineering
+                </p>
+                <ul>
+                    <li>Contributed to the design of a wheelchair-accessible rover for individuals with Muscular
+                        Dystrophy.</li>
+                    <li>Led the design and prototyping of an elevator mechanism for easy access.</li>
+                    <li>Constructed a scaled low-fidelity cardboard prototype to test concepts.</li>
+                </ul>
+            </div>
+            <div class="project-side">
+                <div class="carousel">
+                    <!-- Radio Buttons -->
+                    <input type="radio" name="carousel-samantha" id="samantha-slide1" checked>
+                    <input type="radio" name="carousel-samantha" id="samantha-slide2">
+                    <input type="radio" name="carousel-samantha" id="samantha-slide3">
+
+                    <!-- Slides -->
+                    <div class="carousel-item" id="samantha-content1">
+                        <img src="Wheelchair.jpg" alt="Rover" />
+                    </div>
+                    <div class="carousel-item" id="samantha-content2">
+                        <img src="Elevator.jpg" alt="Elevator" />
+                    </div>
+                    <div class="carousel-item" id="samantha-content3">
+                        <img src="Drill.jpg" alt="Drill" />
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="carousel-nav">
+                        <label for="samantha-slide1">&#9679;</label>
+                        <label for="samantha-slide2">&#9679;</label>
+                        <label for="samantha-slide3">&#9679;</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="project">
+            <div class="project-text">
+                <p><strong>2D Platformer Game - Duck Jump</strong> | 2023<br>
+                    Solo Project | Unity, C#, Photoshop
+                </p>
+                <ul>
+                    <li>Designed and developed a 2D platformer featuring a duck collecting golden eggs across
+                        challenging
+                        levels.</li>
+                    <li>Created custom environments and all visual assets using Photoshop.</li>
+                    <li>Programmed gameplay mechanics in Unity with C#.</li>
+                </ul>
+            </div>
+            <div class="project-side">
+                <div class="carousel">
+                    <!-- Radio buttons -->
+                    <input type="radio" name="carousel-duck" id="duck-slide1" checked>
+                    <input type="radio" name="carousel-duck" id="duck-slide2">
+
+                    <!-- Slides -->
+                    <div class="carousel-item" id="duck-content1">
+                        <img src="DuckJump.png" alt="Duck Jump Screenshot" class="duck-jump-screenshot">
+                    </div>
+                    <div class="carousel-item" id="duck-content2">
+                        <video class="duck-video" controls>
+                            <source src="DuckJumpVid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <div class="carousel-nav">
+                        <label for="duck-slide1" class="nav-btn">&#9679;</label>
+                        <label for="duck-slide2" class="nav-btn">&#9679;</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="thick-line">
+        <div class="contacts">
+            <h2 id="contacts">How to Contact Me:</h2>
+            <p>
+                Contact me at:
+                <a href="mailto:nancygonzalez@u.boisestate.edu">nancygonzalez@u.boisestate.edu</a>
+            </p>
+            <h2>Socials + Other:</h2>
+            <a href="https://www.linkedin.com/in/nancygonzalezsolano/" target="_blank">LinkedIn</a>
+            <p><a href="https://github.com/Nancy1924" target="_blank">Github</a></p>
+        </div>
+
+
+    </div>
+</body>
+
 </html>
