@@ -1,0 +1,242 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top menu */
+.top-menu {
+  background-color: #004080;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.top-menu a:hover {
+  color: #ffd700;
+}
+
+/* Main headings */
+h1,
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #002d62;
+}
+
+/* Underline class */
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Profile section */
+.profile-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile-image {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-text {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Project layout */
+.project {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1000px;
+  background-color: #ffffffcc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.project-text ul {
+  padding-left: 20px;
+}
+
+/* HR styling */
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+.thick-line {
+  border-top: 3px solid #004080;
+}
+
+/* Contact section */
+.contacts {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+/* Carousel styling */
+.carousel {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  overflow: hidden;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Style for carousel items */
+.carousel-item {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust size for the first image */
+#samantha-content1 img {
+  width: 165px; 
+  height: auto; 
+}
+
+/* Adjust size for the second image */
+#samantha-content2 img {
+  width: 165px; 
+  height: auto; 
+}
+
+/* Adjust size for the third image */
+#samantha-content3 img {
+  width: 250px; 
+  height: auto; 
+}
+
+/* Center the images within the carousel */
+.carousel-item img {
+  display: block;
+  margin: auto; 
+  position: relative;
+  top: 45%; 
+  transform: translateY(-50%); 
+}
+
+/* Center the navigation buttons */
+.carousel-nav {
+  position: absolute;
+  bottom: 8px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Samantha Project carousel logic */
+#samantha-slide1:checked ~ #samantha-content1,
+#samantha-slide2:checked ~ #samantha-content2,
+#samantha-slide3:checked ~ #samantha-content3 {
+  display: block;
+}
+
+/* Duck Jump carousel logic */
+#duck-slide1:checked ~ #duck-content1,
+#duck-slide2:checked ~ #duck-content2 {
+  display: block;
+}
+
+/* Show the active slide */
+#slide1:checked ~ #content1,
+#slide2:checked ~ #content2,
+#slide3:checked ~ #content3 {
+  display: block;
+}
+
+/* Navigation buttons */
+.carousel-nav {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+}
+
+.nav-btn:hover {
+  color: black;
+}
+
+.duck-video{
+  width: 320px; 
+  height: 220px; 
+  border-radius: 10px; 
+}
+
+.duck-jump-screenshot{
+  width: 600px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.youtube{
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.mn{
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
